@@ -1,5 +1,5 @@
 {
-    "name": "eulr/OOM",
+    "name": "eulr/oom",
     "type": "library",
     "description": "Object Oriented Model for php and MySQL",
     "keywords": ["Object-Oriented","database", "MySQL", "object"],
