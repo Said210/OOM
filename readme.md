@@ -5,7 +5,7 @@ OOM Quick Guide (With examples) And in spanglish (Ahua)
 
 Deberás hacer el require de OOM.php 
 ```php
-require_once '/path/to/OOM.php'
+require_once '/vendor/eulr/oom/OOM.php'
 ```
 y heredar de esa OOM
 ```php
