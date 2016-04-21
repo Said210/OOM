@@ -198,6 +198,26 @@ Campo      | Valor
 $r = $m->last();
 // {"id":"42","description":"Coyoacan Agosto 2015","water_mark":"W2hnsEkVyg"}
 ```
+
+
+## Método: ``` count(where='') ```
+
+Campo      | Valor
+-----------|-------
+**where** *(String)* | MySQL query
+**regresa**    | Entero
+
+
+
+### Implementación
+```php
+$r = $m->where('description = "Pedro"');
+echo $r; 
+// 0
+```
+
+
+
 Isier 7w7 
 
 

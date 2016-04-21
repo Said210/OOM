@@ -2,14 +2,13 @@
 /*
 	Build by eulr @ eulr.mx
 	hola@eulr.mx
-    v0.5.5-beta
+    V 0.5.5b
 */
 	require_once 'connection.php';
     require_once 'logger.php';
 	class OOM{
 		public $model_name = "";
 		public $db = "notedice_SS";
-		// public $db = "SS";
 		public $before_save = null;
 		public $attr = [];
         
@@ -267,6 +266,21 @@
 				$z = (array) $obj;
 			}
 			return $z['result'];
+		}
+
+		function count($where=''){
+			$connection = new Connection();
+			$conn = $connection->connect($this->db);
+			if($where == ''){
+				$sql = "SELECT count(*) as n FROM ".$this->model_name;
+			}else{
+				$sql = "SELECT count(*) as n FROM ".$this->model_name." WHERE ".$where.";";
+			}
+			$result = $conn->query($sql);
+			while($obj = $result->fetch_object()){
+				$z = $obj;
+			}
+			return $z->n;
 		}
 		
 
