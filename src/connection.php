@@ -2,15 +2,19 @@
 /*
 	Build by eulr @ eulr.mx
 	hola@eulr.mx
-	v0.0.1-alpha
+	V1.0
 */
 	class Connection{
 
 
 		function connect($db){
-			$servername = "127.0.0.1";
-			$username = "root";
-			$password = "";
+			$servername = "[YOUR_HOST]"; // HOST TO CONNECT
+			$username = "[YOUR_REMOTE_USERNAME]"; // MYSQL USERNAME
+			$password = "[YOUR_REMOTE_PASSWORD]"; // MYSQL PASSWORD
+			if ($_SERVER["HTTP_HOST"] == "localhost") { // IF YOU WANT TO CHANGE IT DEPENDING WHERE IT'S RUNNING
+				$username = "root";
+				$password = "";
+			}
 
 			// Create connection
 			$conn = mysqli_connect($servername, $username, $password, $db);

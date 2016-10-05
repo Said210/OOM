@@ -1,5 +1,9 @@
 OOM Quick Guide (With examples) And in spanglish (Ahua)
 ==========================
+
+OOM es una clase base para poder utilizar una base de datos en MySQL 
+como si fuesen objetos desde PHP.
+
 ---------------------------------------------------------------------------------------------
 ## Construcción de una clase de para representar una tabla
 

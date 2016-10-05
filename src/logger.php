@@ -5,7 +5,7 @@
         v0.1.3-alpha
     */
     class Logger{
-        public $ENV = "test";
+        public $ENV = "";
         public $PATH = "";
         
         function __construct($P_env = "development", $time_zone='America/Mexico_City'){
